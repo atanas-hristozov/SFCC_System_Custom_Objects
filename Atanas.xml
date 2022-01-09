@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xmlns="http://www.demandware.com/xml/impex/metadata/2006-10-31">
+  <type-extension type-id="Product">
+    <custom-attribute-definitions>
+      <attribute-definition attribute-id="Atanas_attr">
+        <display-name xml:lang="x-default">Atanas_attr</display-name>
+        <type>string</type>
+        <localizable-flag>false</localizable-flag>
+        <site-specific-flag>false</site-specific-flag>
+        <mandatory-flag>false</mandatory-flag>
+        <visible-flag>false</visible-flag>
+        <externally-managed-flag>false</externally-managed-flag>
+        <order-required-flag>false</order-required-flag>
+        <externally-defined-flag>false</externally-defined-flag>
+        <min-length>0</min-length>
+
+        <display-name xml:lang="x-default">Skin Concern</display-name>
+        <type>enum-of-string</type>
+        <localizable-flag>false</localizable-flag>
+        <site-specific-flag>false</site-specific-flag>
+        <mandatory-flag>false</mandatory-flag>
+        <visible-flag>false</visible-flag>
+        <externally-managed-flag>false</externally-managed-flag>
+        <order-required-flag>false</order-required-flag>
+        <externally-defined-flag>false</externally-defined-flag>
+        <select-multiple-flag>true</select-multiple-flag>
+
+        <display-name xml:lang="x-default">TV Type</display-name>
+        <type>enum-of-string</type>
+        <localizable-flag>false</localizable-flag>
+        <site-specific-flag>false</site-specific-flag>
+        <mandatory-flag>false</mandatory-flag>
+        <visible-flag>true</visible-flag>
+        <externally-managed-flag>false</externally-managed-flag>
+        <order-required-flag>false</order-required-flag>
+      </value-definitions>
+    </attribute-definition>
+  </custom-attribute-definitions>
+
+  <group-definitions>
+    <attribute-group group-id="Atanas_group">
+      <display-name xml:lang="x-default">Atanas_group</display-name>
+    </attribute-group>
+  </group-definitions>
+</type-extension>
+
+<custom-type type-id="Atanas_NewsletterSubscription">
+  <display-name xml:lang="x-default">Atanas Newsletter Subscription</display-name>
+  <staging-mode>no-staging</staging-mode>
+  <storage-scope>site</storage-scope>
+  <key-definition attribute-id="Atanas_email">
+    <type>string</type>
+    <min-length>0</min-length>
+  </key-definition>
+  <attribute-definitions>
+    <attribute-definition attribute-id="Atanas_firstName">
+      <display-name xml:lang="x-default">Atanas First Name</display-name>
+      <type>string</type>
+      <localizable-flag>false</localizable-flag>
+      <mandatory-flag>false</mandatory-flag>
+      <externally-managed-flag>false</externally-managed-flag>
+      <min-length>0</min-length>
+    </attribute-definition>
+    <attribute-definition attribute-id="Hristozov_lastName">
+      <display-name xml:lang="x-default">Hristozov Last Name</display-name>
+      <type>string</type>
+      <localizable-flag>false</localizable-flag>
+      <mandatory-flag>false</mandatory-flag>
+      <externally-managed-flag>false</externally-managed-flag>
+      <min-length>0</min-length>
+    </attribute-definition>
+  </attribute-definitions>
+  <group-definitions>
+    <attribute-group group-id="Atanas_NewsletterSubscriptionCO">
+      <display-name xml:lang="x-default">Atanas_Presentation</display-name>
+      <attribute attribute-id="Atanas_email"/>
+      <attribute attribute-id="Atanas_firstName"/>
+      <attribute attribute-id="Hristozov_lastName"/>
+    </attribute-group>
+  </group-definitions>
+</custom-type>
+
+<custom-type type-id="id">
+  <staging-mode>no-staging</staging-mode>
+  <storage-scope>site</storage-scope>
+  <key-definition attribute-id="NewsLetter Subscription">
+    <type>string</type>
+    <min-length>0</min-length>
+  </key-definition>
+  <attribute-definitions>
+    <attribute-definition attribute-id="email">
+      <display-name xml:lang="x-default">Email</display-name>
+      <type>string</type>
+      <localizable-flag>false</localizable-flag>
+      <mandatory-flag>false</mandatory-flag>
+      <externally-managed-flag>false</externally-managed-flag>
+      <min-length>0</min-length>
+    </attribute-definition>
+    <attribute-definition attribute-id="name">
+      <display-name xml:lang="x-default">Name</display-name>
+      <type>string</type>
+      <localizable-flag>false</localizable-flag>
+      <mandatory-flag>false</mandatory-flag>
+      <externally-managed-flag>false</externally-managed-flag>
+      <min-length>0</min-length>
+    </attribute-definition>
+  </attribute-definitions>
+  <group-definitions>
+    <attribute-group group-id="details">
+      <display-name xml:lang="x-default">Details</display-name>
+      <attribute attribute-id="email"/>
+      <attribute attribute-id="name"/>
+    </attribute-group>
+  </group-definitions>
+</custom-type>
+
+</metadata>
